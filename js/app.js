@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
-	for (i=1; i<=100; i++) {
+	var userNumber = prompt("Enter a number!");
+	
+
+
+function fizzbuzz(integer) {
+	if (isNaN(userNumber)) {
+			$("h1").html("Please enter a number");
+		}
+	else {parseInt(userNumber);
+	}
+
+	for (i=1; i<=integer; i++) {
 
 	if (i%3==0 && i%5==0) {
 		console.log("fizzbuzz");
@@ -18,6 +29,11 @@ $(document).ready(function(){
 		console.log(i);
 		$("body").append("<p>"+i+" </p>");
 	}
-
 };
+};
+
+
+
+fizzbuzz(userNumber);
+
 });
